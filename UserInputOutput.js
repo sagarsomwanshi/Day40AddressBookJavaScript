@@ -9,7 +9,8 @@ class UserInputOutput {
         console.log("Press 5 - To get count of contacts in address book")
         console.log("Press 6 - To search person by city or state")
         console.log("Press 7 - To count contacts by city or state")
-        console.log("Press 8 - To exit");
+        console.log("Press 8 - To sort Contact List")
+        console.log("Press 9 - To exit");
         console.log();
         return parseInt(prompt("Enter your choice : "));
     }
