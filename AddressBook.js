@@ -1,4 +1,5 @@
 // importing another class file to this class file
+
 const prompt = require('prompt-sync')();
 const UserInputOutput = require("./UserInputOutput.js");
 const AddressBookService = require("./AddressBookService.js");
@@ -35,6 +36,10 @@ while (flag) {
             console.log();
             break;
         case 7:
+            addressBookService.CountContact(contactInfoList);
+            console.log();
+            break;
+        case 8:
             console.log("EXITED !!!");
             flag = false;
             break;
