@@ -1,3 +1,4 @@
+// importing another class file to this class file
 const prompt = require('prompt-sync')();
 const UserInputOutput = require("./UserInputOutput.js");
 const AddressBookService = require("./AddressBookService.js");
@@ -22,6 +23,10 @@ while (flag) {
             contactInfoList = addressBookService.editContact(contactInfoList, fName);
             break;
         case 4:
+            let pName = prompt("Enter the first Name to delete Contact details : ");
+            contactInfoList = addressBookService.deleteContact(contactInfoList,pName);
+            break;
+        case 5:
             console.log("EXITED !!!");
             flag = false;
             break;
